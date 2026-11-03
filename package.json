@@ -1,0 +1,39 @@
+
+{
+  "name": "line-nihongo-companion",
+  "version": "1.0.0",
+  "description": "An AI-powered Japanese life assistant built for LINE.",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "tsx src/selftest.ts",
+    "gemini": "tsx src/test-gemini.ts",
+    "prompt": "tsx scripts/show-prompt.ts",
+    "richmenu": "tsx src/richmenu.ts"
+  },
+  "keywords": [
+    "line",
+    "typescript",
+    "gemini",
+    "japanese"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@google/genai": "^2.30.0",
+    "@line/bot-sdk": "^11.3.0",
+    "better-sqlite3": "^13.0.3",
+    "dotenv": "^18.0.8",
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
